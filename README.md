@@ -9,9 +9,9 @@ Welcome to the **AI Engineering Learning 101** repository! This repository conta
 | Metric | Details |
 |---|---|
 | **Total Topics** | **17** |
-| **Completed** | 🟢 **2** |
+| **Completed** | 🟢 **3** |
 | **In Progress** | 🟡 **0** |
-| **Not Started** | ⚪ **15** |
+| **Not Started** | ⚪ **14** |
 | **Date Coverage** | **Sep 24 – Oct 10, 2026** |
 | **Daily Schedule** | **9:30 PM – 11:00 PM** |
 
@@ -24,7 +24,7 @@ Welcome to the **AI Engineering Learning 101** repository! This repository conta
 | **1** | **ML – Supervised Learning** | 2026-09-24 | 9:30 PM – 11:00 PM | 🟢 Completed | Regression, Classification, Linear Regression, Logistic Regression, KNN, SVM, Decision Tree, Random Forest, Ensemble methods, evaluation metrics, bias/variance, overfitting/underfitting, Backpropagation, Loss functions | 🟢 Completed | 🟢 Completed |
 | **2** | **ML – Unsupervised Learning + Recommendation Systems** | 2026-09-25 | 9:30 PM – 11:00 PM | 🟢 Completed | Clustering (K-Means, Hierarchical, DBSCAN), Dimensionality Reduction (PCA), Association Rules, Anomaly Detection, Recommendation Systems (Content-Based, Collaborative Filtering, Hybrid) | 🟢 Completed | 🟢 Completed |
 | **3** | **ML – Model Deployment + Fine-Tuning** | 2026-09-26 | 9:30 PM – 11:00 PM | ⚪ Not Started | Model saving/loading, Flask/FastAPI, API, Streamlit, Docker basics, cloud basics, pipelines, hyperparameter tuning, GridSearchCV, RandomizedSearchCV, cross-validation | ⚪ Not Started | ⚪ Not Started |
-| **4** | **DL – Introduction + ANN + NLP** | 2026-09-27 | 9:30 PM – 11:00 PM | ⚪ Not Started | Neural Networks, ANN architecture, forward/backpropagation, loss function, NLP preprocessing, TF-IDF, Word2Vec, embeddings, text classification, Regularization, Batch Normalization, Dropout, Early Stopping | ⚪ Not Started | ⚪ Not Started |
+| **4** | **DL – Introduction + ANN + NLP** | 2026-09-27 | 9:30 PM – 11:00 PM | 🟢 Completed | Neural Networks, ANN architecture, forward/backpropagation, loss function, NLP preprocessing, TF-IDF, Word2Vec, embeddings, text classification, Regularization, Batch Normalization, Dropout, Early Stopping | 🟢 Completed | 🟢 Completed |
 | **5** | **DL – Activation + Optimization + Training** | 2026-09-28 | 9:30 PM – 11:00 PM | ⚪ Not Started | Sigmoid, Tanh, ReLU, Leaky ReLU, Softmax, optimizers (GD, SGD, Adam, RMSprop), learning rate, epochs, batch size, regularization, Batch Normalization, Dropout, early stopping | ⚪ Not Started | ⚪ Not Started |
 | **6** | **DL – CNN** | 2026-09-29 | 9:30 PM – 11:00 PM | ⚪ Not Started | Convolution, filters/kernels, padding, stride, pooling, feature maps, Flatten, CNN architecture, transfer learning | ⚪ Not Started | ⚪ Not Started |
 | **7** | **DL – OpenCV + Computer Vision + YOLO** | 2026-09-30 | 9:30 PM – 11:00 PM | ⚪ Not Started | Image processing, image transformations, thresholding, contours, edge detection, OpenCV, object detection, YOLO architecture, bounding boxes, IoU, NMS, mAP | ⚪ Not Started | ⚪ Not Started |
@@ -74,6 +74,20 @@ Welcome to the **AI Engineering Learning 101** repository! This repository conta
 
 ---
 
+### 📍 Topic 4: DL – Introduction + ANN + NLP
+**Task Title:** *"The Customer Review Sentiment & Intent Intelligence Engine"*
+
+* **Part 1 (Preprocessing & Feature Representations):**
+  * **Dataset:** IMDB / Amazon Product Reviews Dataset.
+  * **Goal:** Implement custom text cleaning (lowercasing, punctuation, stopwords, lemmatization), build a **TF-IDF Matrix**, and train a **Word2Vec** embedding model (CBOW / Skip-Gram).
+* **Part 2 (ANN Architecture & Regularization):**
+  * **Goal:** Build a PyTorch / Keras **Artificial Neural Network (ANN)** incorporating **Batch Normalization** and **Dropout** ($p=0.3$).
+  * **Deliverables:**
+    * Train with **Adam Optimizer**, **Binary Cross-Entropy Loss**, and **Early Stopping** (patience=5).
+    * Compare classification performance of **TF-IDF + ANN** vs **Word2Vec + ANN** (Confusion Matrix, Precision, Recall, F1-Score).
+
+---
+
 ## 📁 Repository Directory & Student Work Tracking
 
 To easily track submissions across **4 students**, all exercise work is organized in the `students/` directory structure below. Each student submits their Jupyter Notebooks (`.ipynb`) or Python scripts (`.py`) inside their designated folder.
@@ -82,32 +96,42 @@ To easily track submissions across **4 students**, all exercise work is organize
 
 ```text
 AI-Engineering-Learning101/
-├── 01_Supervised_Learning/         # Reference materials & instructor solutions
-├── 02_Unsupervised_Learning/       # Reference materials & instructor solutions
+├── 01_Supervised_Learning/                  # Reference materials & instructor solutions
+├── 02_Unsupervised_Learning/                # Reference materials & instructor solutions
+├── 03_ML – Model Deployment + Fine-Tuning/  # Reference materials & instructor solutions
+├── 04_DL – Introduction + ANN + NLP/        # Reference materials & instructor solutions
 │
-└── students/                       # Student Exercise Submissions
-    ├── harshil/                  # Student 1 Work directory
+└── students/                                # Student Exercise Submissions
+    ├── harshil/                           # Student 1 Work directory
     │   ├── Topic_01_Supervised_Learning/
-    │   └── Topic_02_Unsupervised_Learning/
-    ├── jay/                  # Student 2 Work directory
+    │   ├── Topic_02_Unsupervised_Learning/
+    │   ├── Topic_03_Model_Deployment/
+    │   └── Topic_04_DL_ANN_NLP/
+    ├── jay/                               # Student 2 Work directory
     │   ├── Topic_01_Supervised_Learning/
-    │   └── Topic_02_Unsupervised_Learning/
-    ├── shrey/                  # Student 3 Work directory
+    │   ├── Topic_02_Unsupervised_Learning/
+    │   ├── Topic_03_Model_Deployment/
+    │   └── Topic_04_DL_ANN_NLP/
+    ├── shrey/                             # Student 3 Work directory
     │   ├── Topic_01_Supervised_Learning/
-    │   └── Topic_02_Unsupervised_Learning/
-    └── vishal/                  # Student 4 Work directory
+    │   ├── Topic_02_Unsupervised_Learning/
+    │   ├── Topic_03_Model_Deployment/
+    │   └── Topic_04_DL_ANN_NLP/
+    └── vishal/                            # Student 4 Work directory
         ├── Topic_01_Supervised_Learning/
-        └── Topic_02_Unsupervised_Learning/
+        ├── Topic_02_Unsupervised_Learning/
+        ├── Topic_03_Model_Deployment/
+        └── Topic_04_DL_ANN_NLP/
 ```
 
 ### 👥 Student Progress Tracking Matrix
 
-| Student | Topic 1: Supervised Learning | Topic 2: Unsupervised Learning | Submission Link |
-| :--- | :---: | :---: | :--- |
-| **harshil** | ⏳ Pending | ⏳ Pending | [`students/student_1/`](students/harshil/) |
-| **jay** | ⏳ Pending | ⏳ Pending | [`students/student_2/`](students/jay/) |
-| **Shrey** | ⏳ Pending | ⏳ Pending | [`students/student_3/`](students/shrey/) |
-| **vishal** | ⏳ Pending | ⏳ Pending | [`students/student_4/`](students/vishal/) |
+| Student | Topic 1: Supervised | Topic 2: Unsupervised | Topic 3: Deployment | Topic 4: DL (ANN & NLP) | Submission Link |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **harshil** | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | [`students/harshil/`](students/harshil/) |
+| **jay** | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | [`students/jay/`](students/jay/) |
+| **Shrey** | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | [`students/shrey/`](students/shrey/) |
+| **vishal** | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending | [`students/vishal/`](students/vishal/) |
 
 ---
 
